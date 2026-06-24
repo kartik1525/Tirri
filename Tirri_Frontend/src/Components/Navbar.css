@@ -7,7 +7,7 @@
   border-bottom: 1px solid var(--border-color);
   padding: 0 16px;
   user-select: none;
-  z-index: 100;
+  
 }
 
 .navbar-left, .navbar-right {
@@ -15,7 +15,6 @@
   align-items: center;
   gap: 16px;
 }
-
 .nav-btn {
   display: flex;
   align-items: center;
@@ -23,74 +22,18 @@
   width: 32px;
   height: 32px;
   border-radius: 4px;
-  color: var(--primary-text);
-  transition: background-color 0.15s ease;
+ 
 }
-
-.nav-btn:hover {
-  background-color: var(--card-bg);
-}
-
-.grid-btn {
-  color: var(--secondary-text);
-}
-
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  cursor: pointer;
   padding-right: 8px;
 }
-
-.jira-logo-svg {
-  display: block;
-}
-
 .logo-text {
   font-size: 19px;
   font-weight: 800;
-  color: var(--primary-text);
-  letter-spacing: -0.5px;
+  
 }
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-@media (max-width: 1024px) {
-  .nav-menu {
-    display: none; /* Hide menus on smaller screens */
-  }
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  color: var(--primary-text);
-  font-size: 14px;
-  font-weight: 500;
-  transition: background-color 0.15s ease;
-}
-
-.nav-item:hover {
-  background-color: var(--card-bg);
-}
-
-.nav-item span {
-  color: var(--primary-text);
-}
-
-.nav-item svg {
-  color: var(--secondary-text);
-}
-
 .create-btn {
   background-color: var(--primary-blue);
   color: #ffffff;
@@ -103,98 +46,4 @@
 
 .create-btn:hover {
   background-color: var(--hover-blue);
-}
-
-/* Right side search & icons */
-.search-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  position: absolute;
-  left: 10px;
-  color: var(--secondary-text);
-  pointer-events: none;
-}
-
-.search-input {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  color: var(--primary-text);
-  border-radius: 4px;
-  padding: 6px 12px 6px 32px;
-  width: 220px;
-  font-size: 14px;
-  transition: all 0.2s ease;
-}
-
-.search-input::placeholder {
-  color: var(--secondary-text);
-}
-
-.search-input:focus {
-  width: 280px;
-  border-color: var(--hover-blue);
-  background-color: var(--main-bg);
-  box-shadow: 0 0 0 1px var(--hover-blue);
-}
-
-.premium-badge {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  border: 1px solid var(--border-color);
-  background-color: var(--card-bg);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.premium-badge span {
-  color: var(--primary-text);
-}
-
-.premium-badge .days-left {
-  background-color: #2C333A;
-  border-radius: 3px;
-  padding: 1px 5px;
-  color: var(--secondary-text);
-  font-size: 11px;
-}
-
-.icon-btn {
-  position: relative;
-}
-
-.bell-badge {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: 6px;
-  height: 6px;
-  background-color: #DE350B; /* Jira Red indicator */
-  border-radius: 50%;
-}
-
-.user-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #FF8B00; /* Avatar Orange */
-  color: #172B4D;
-  font-weight: 700;
-  font-size: 12px;
-  cursor: pointer;
-  transition: filter 0.15s ease;
-  user-select: none;
-}
-
-.user-avatar:hover {
-  filter: brightness(1.1);
 }
