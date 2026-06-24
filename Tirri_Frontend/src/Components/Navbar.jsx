@@ -1,27 +1,30 @@
-import React from 'react'
-import { LayoutGrid, ChevronDown, Search, Bell, HelpCircle, Settings } from 'lucide-react'
-import './Navbar.css'
+import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <header className="navbar-container">
+    <nav className="navbar">
       <div className="navbar-left">
-        <div className="nav-logo" style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-          <img src="tirri.png" alt="" width="50px" height="50px"/>
-          <span className="logo-text">Tirri</span>
-        </div>
+        <img
+          src="tirri.png"
+          alt="logo"
+          className="logo"
+        />
+        <h2>Tirri</h2>
       </div>
+
       <div className="navbar-right">
-        <div className="search-wrapper">
-          <Search className="search-icon" size={16} />
-          <input type="text" placeholder="Search" className="search-input" />
+        <div className="search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="Search" />
         </div>
+
         <button className="create-btn">
           Create
         </button>
       </div>
-    </header>
-  )
-}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
