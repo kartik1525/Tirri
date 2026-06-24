@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Sidebar from './Components/Sidebar'
 function App() {
   return (
-    <div>Ahjpp</div>
+    <>
+      <Sidebar />
+      
+    </>
   )
 }
 
