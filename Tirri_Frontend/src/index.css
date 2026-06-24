@@ -1,16 +1,68 @@
-*{
-    background-color:#1d2124 ;
-    color: #DEE4EA;
-    
+:root {
+  --main-bg: #1D2125;
+  --sidebar-bg: #161A1D;
+  --card-bg: #22272B;
+  --border-color: #2C333A;
+  --primary-blue: #0C66E4;
+  --hover-blue: #388BFF;
+  --active-sidebar-item: #1C2B41;
+  --primary-text: #DEE4EA;
+  --secondary-text: #8C9BAB;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-Element	Color	Hex
-Main Background	Dark Charcoal	#1D2125
-Sidebar Background	Near Black	#161A1D
-Card / Panel Background	Dark Gray	#22272B
-Border Color	Subtle Gray	#2C333A
-Primary Blue (Jira Brand)	Atlassian Blue	#0C66E4
-Hover Blue	Bright Blue	#388BFF
-Active Sidebar Item	Deep Blue	#1C2B41
-Primary Text	Off White	#DEE4EA
+body {
+  background-color: var(--main-bg);
+  color: var(--primary-text);
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: inherit;
+}
+
+input {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Scrollbar styling matching Jira's dark theme scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2C333A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A444E;
+}
